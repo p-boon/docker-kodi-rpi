@@ -11,7 +11,9 @@ services:
       - /dev/video10
       - /dev/video19
       - /dev/media0
+      - /dev/dma_heap
     group_add:
       - video
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - ./data:/root/.kodi/
